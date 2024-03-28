@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/실행 컨텍스트.md",
+                "file": "javascript/This.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "javascript/실행 컨텍스트.md",
+                "file": "javascript/This.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "javascript/실행 컨텍스트.md",
+                "file": "javascript/This.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "javascript/실행 컨텍스트.md"
+                "file": "javascript/This.md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "fb0b9193b69fa9bd",
   "lastOpenFiles": [
-    "javascript/데이터 타입.md",
+    "스크린샷 2024-03-28 오후 9.41.40.png",
     "javascript/실행 컨텍스트.md",
+    "javascript/This.md",
+    "javascript/데이터 타입.md",
     "README.md",
     "javascript/도서 정리/코어자바스크립트/데이터 타입.md",
     "javascript/도서 정리/코어자바스크립트",
