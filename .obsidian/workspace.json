@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/콜백함수.md",
+                "file": "javascript/클로저.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "javascript/콜백함수.md",
+                "file": "javascript/클로저.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "javascript/콜백함수.md",
+                "file": "javascript/클로저.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "javascript/콜백함수.md"
+                "file": "javascript/클로저.md"
               }
             }
           }
@@ -148,10 +148,11 @@
   },
   "active": "fb0b9193b69fa9bd",
   "lastOpenFiles": [
-    "javascript/This.md",
-    "javascript/콜백함수.md",
-    "javascript/실행 컨텍스트.md",
     "스크린샷 2024-03-28 오후 9.41.40.png",
+    "javascript/클로저.md",
+    "javascript/콜백함수.md",
+    "javascript/This.md",
+    "javascript/실행 컨텍스트.md",
     "javascript/데이터 타입.md",
     "README.md",
     "javascript/도서 정리/코어자바스크립트/데이터 타입.md",
