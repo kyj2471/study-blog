@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/클로저.md",
+                "file": "javascript/프로토타입.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "javascript/클로저.md",
+                "file": "javascript/프로토타입.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "javascript/클로저.md",
+                "file": "javascript/프로토타입.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "javascript/클로저.md"
+                "file": "javascript/프로토타입.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "fb0b9193b69fa9bd",
   "lastOpenFiles": [
-    "스크린샷 2024-03-28 오후 9.41.40.png",
     "javascript/클로저.md",
+    "javascript/프로토타입.md",
+    "스크린샷 2024-03-28 오후 9.41.40.png",
     "javascript/콜백함수.md",
     "javascript/This.md",
     "javascript/실행 컨텍스트.md",
