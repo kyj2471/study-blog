@@ -146,12 +146,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "fb0b9193b69fa9bd",
+  "active": "fcd386b911aef569",
   "lastOpenFiles": [
-    "javascript/프로토타입.md",
-    "javascript/클래스.md",
-    "javascript/클로저.md",
+    "CS/네트워크",
+    "CS",
     "스크린샷 2024-03-28 오후 9.41.40.png",
+    "javascript/클래스.md",
+    "javascript/프로토타입.md",
+    "javascript/클로저.md",
     "javascript/콜백함수.md",
     "javascript/This.md",
     "javascript/실행 컨텍스트.md",
