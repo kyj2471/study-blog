@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/네트워크/Application Layer.md",
+                "file": "CS/네트워크/What is Internet?.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/네트워크/Application Layer.md",
+                "file": "CS/네트워크/What is Internet?.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/네트워크/Application Layer.md",
+                "file": "CS/네트워크/What is Internet?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/네트워크/Application Layer.md"
+                "file": "CS/네트워크/What is Internet?.md"
               }
             }
           }
@@ -146,10 +146,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "fcd386b911aef569",
+  "active": "fb0b9193b69fa9bd",
   "lastOpenFiles": [
     "javascript/클래스.md",
-    "CS/네트워크/Application Layer.md",
+    "CS/네트워크/What is Internet?.md",
     "CS/네트워크",
     "CS",
     "스크린샷 2024-03-28 오후 9.41.40.png",
