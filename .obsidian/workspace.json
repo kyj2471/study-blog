@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/전체 확인.md",
+                "file": "javascript/총정리.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "javascript/전체 확인.md",
+                "file": "javascript/총정리.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "javascript/전체 확인.md",
+                "file": "javascript/총정리.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "javascript/전체 확인.md"
+                "file": "javascript/총정리.md"
               }
             }
           }
@@ -149,7 +149,7 @@
   "active": "fb0b9193b69fa9bd",
   "lastOpenFiles": [
     "CS/네트워크/FTP.md",
-    "javascript/전체 확인.md",
+    "javascript/총정리.md",
     "CS/네트워크/Principles of network, applications, Web and HTTP.md",
     "CS/네트워크/Delay, loss, throughput in networks, Protocol layers, service models.md",
     "CS/네트워크/Network Edge, Network Core.md",
