@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "50ddaafc68e3b822",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.12"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +157,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "7b8e4cb665dc619b",
+  "active": "50ddaafc68e3b822",
   "lastOpenFiles": [
     "javascript/콜백함수.md",
     "CS/네트워크/FTP.md",
