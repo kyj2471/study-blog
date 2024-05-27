@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "50ddaafc68e3b822",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS/네트워크/What is Internet?.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/네트워크/What is Internet?.md",
+                "file": "javascript/총정리.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/네트워크/What is Internet?.md",
+                "file": "javascript/총정리.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/네트워크/What is Internet?.md"
+                "file": "javascript/총정리.md"
               }
             }
           }
@@ -159,8 +146,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "50ddaafc68e3b822",
+  "active": "7b8e4cb665dc619b",
   "lastOpenFiles": [
+    "CS/네트워크/What is Internet?.md",
     "javascript/콜백함수.md",
     "CS/네트워크/FTP.md",
     "CS/네트워크/무제 파일.md",
@@ -168,7 +156,6 @@
     "CS/네트워크/Principles of network, applications, Web and HTTP.md",
     "CS/네트워크/Delay, loss, throughput in networks, Protocol layers, service models.md",
     "CS/네트워크/Network Edge, Network Core.md",
-    "CS/네트워크/What is Internet?.md",
     "javascript/클래스.md",
     "CS/네트워크",
     "CS",
