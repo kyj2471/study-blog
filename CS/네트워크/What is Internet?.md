@@ -6,21 +6,19 @@
 인터넷이란 network of networks이다. 라우터, hosts, communication link등이 전부 섞여 뭉치뭉치 있다. 이런 뭉치를 네트워크라고 생각했을 때 internet은 이런 네트워크들의 네트워크라고 생각하면된다. 이런 인터넷은 모두가 같은 방식으로 소통해야하기에 표준화가 중요하다. 이 기관은 IETF이고 여기서 RFC라는 표준안들을 발표한다.
 
 
+
 **hosts**
 
 
 사용자의 어플리케이션을 호스팅해준다고 해서 호스트이다. 그리고 네트워크의 가장자리에 있다 해서 end systems이라 부른다.
 
 **router(switches)**
-
 사용자의 메세지를 목적지를 찾아가게해준다. 즉, source부터 destination까지 가기위해는 라우터를 타야한다.
 
 **communication links**
-
 이런 라우터와 host를 연결해주는 물리회선이다.
 
 **protocols**
-
 인터넷에서 메세지를 받고 제어하는 일련의 규칙이다. protocol에서는 보내고 받는 메세지의 포맷, 순서, 메시지를 받았을 때 어떤 액션을 취해야하는지를 정의해준다.
 
 # Network Edge, Network Core
