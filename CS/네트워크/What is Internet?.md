@@ -45,4 +45,5 @@ DSL이 아닌 케이블 회사를 통해 연결될 때는 CMTS라는 멀티플�
 
 ## 집이아닌 학교나 기관은 어떻게 연결될까?
 
+
 학교에서 공부를 하면 컴퓨터실을 예로 뒷편에 큰 검정색의 물체가 있는걸 본 적있다. 이를 ethernet switch라고 하는데 ethernet switch의 수많은 포트는 각각의 end systems를 연결해준다. 그리고 이런 ethernet switch도 한개가 아니라 학교나 기관(회사)에 많이 있다. 이런 이더넷 스위치는 학교 전체나 회사 전체로 연결해주는 라우터로 연결된다. 그리고 이 라우터는 인터넷에 연결해주는 ISP(Internet Service Provider)의 라우터로 연결된다. 그리고 dedicated line을통해 라우터가 ISP에 직접 연결된다.
