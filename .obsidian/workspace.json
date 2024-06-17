@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/This.md",
+                "file": "CS/네트워크/What is Internet?.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "javascript/This.md",
+                "file": "CS/네트워크/What is Internet?.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "javascript/This.md",
+                "file": "CS/네트워크/What is Internet?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "javascript/This.md"
+                "file": "CS/네트워크/What is Internet?.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "7b8e4cb665dc619b",
   "lastOpenFiles": [
-    "CS/네트워크/What is Internet?.md",
     "CS/네트워크/무제 파일.md",
+    "javascript/This.md",
+    "CS/네트워크/What is Internet?.md",
     "javascript/총정리.md",
     "javascript/콜백함수.md",
     "CS/네트워크/FTP.md",
@@ -162,7 +163,6 @@
     "스크린샷 2024-03-28 오후 9.41.40.png",
     "javascript/프로토타입.md",
     "javascript/클로저.md",
-    "javascript/This.md",
     "javascript/실행 컨텍스트.md",
     "javascript/데이터 타입.md",
     "README.md",
