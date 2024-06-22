@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9c97fd9dc72c14d5",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.3"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +157,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "7b8e4cb665dc619b",
+  "active": "9c97fd9dc72c14d5",
   "lastOpenFiles": [
     "CS/네트워크/What is Internet?.md",
     "CS/네트워크/Application Layer.md",
