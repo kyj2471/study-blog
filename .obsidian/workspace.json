@@ -13,24 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/네트워크/Application Layer.md",
+                "file": "study/React-Query 이전.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "9c97fd9dc72c14d5",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.3"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/네트워크/Application Layer.md",
+                "file": "study/React-Query 이전.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/네트워크/Application Layer.md",
+                "file": "study/React-Query 이전.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/네트워크/Application Layer.md"
+                "file": "study/React-Query 이전.md"
               }
             }
           }
@@ -157,10 +146,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "9c97fd9dc72c14d5",
+  "active": "7b8e4cb665dc619b",
   "lastOpenFiles": [
-    "CS/네트워크/What is Internet?.md",
     "CS/네트워크/Application Layer.md",
+    "study/React-Query 이전.md",
+    "study",
+    "CS/네트워크/What is Internet?.md",
     "CS/네트워크/Principles of network, applications, Web and HTTP.md",
     "CS/네트워크/FTP.md",
     "CS/네트워크/Network Edge, Network Core.md",
