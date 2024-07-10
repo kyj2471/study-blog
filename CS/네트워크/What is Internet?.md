@@ -1,7 +1,4 @@
-
 ---
-
-# What is Ineternet
 
 인터넷이란 network of networks이다. 라우터, hosts, communication link등이 전부 섞여 뭉치뭉치 있다. 이런 뭉치를 네트워크라고 생각했을 때 internet은 이런 네트워크들의 네트워크라고 생각하면된다. 이런 인터넷은 모두가 같은 방식으로 소통해야하기에 표준화가 중요하다. 이 기관은 IETF이고 여기서 RFC라는 표준안들을 발표한다.
 
@@ -9,7 +6,7 @@
 
 사용자의 어플리케이션을 호스팅해준다고 해서 호스트이다. 그리고 네트워크의 가장자리에 있다 해서end systems이라 부른다.
 
-**router(switches)**
+**router(switches)** 
 
 사용자의 메세지를 목적지를 찾아가게해준다. 즉, source부터 destination까지 가기위해는 여러 라우터를 타야한다.
 
@@ -19,7 +16,7 @@
 
 **protocols**
 
-인터넷에서 메세지를 받고 제어하는 일련의 규칙이다. protocol에서는 보내고 받는 메세지의 포맷, 보내고 받는 순서, 메시지를 받았을 때 어떤 액션을 취해야하는지를 정의해준다.
+인터넷에서 메세지를 받고 제어하는 일련의 규칙이다. protocol에서는  보내고 받는 메세지의 포맷, 보내고 받는 순서, 메시지를 받았을 때 어떤 액션을 취해야하는지를 정의해준다.
 
 - IETF: 인터넷 프로토콜 표준화 기관
 - RFC: 표준안 발표
@@ -91,7 +88,8 @@ FDM은 별도의 frequency를 할당받아 할당받은 frequency를 사용할 �
 
 인터넷이 나오면서 데이터 네트워크에는 circuit switching이 매우 비효율 적이다. 순간적으로 어플리케이션 메세지가 발생을 했다가 한동안 아무런 요청이 없을 수도있는데 circuit switching처럼 하나의 경로를 할당받는게 매우 비효율 적이기 때문이다. 그래서 새로운 기법으로 packet switching이 등장했다.
 
-패킷 스위칭은 call set up과정이 없다. 즉, resource reservation역시 일어나지 않는다. 필요한 경우 그때 그때 사용할 수있게 해준다. 만약 유저 애플리케이션 메세지의 크기가 크다면 패킷으로 잘라서 Access Network로 전송하여 각 패킷이 링크를 점유하는 시간을 고정적으로 차지합니다. 아래 패킷 스위칭 특징을 보자.
+패킷 스위칭은 call set up과정이 없다. 즉, resource reservation역시 일어나지 않는다. 필요한 경우 그때 그때 사용할 수있게 해준다.
+만약 유저 애플리케이션 메세지의 크기가 크다면 패킷으로 잘라서 Access Network로 전송하여 각 패킷이 링크를 점유하는 시간을 고정적으로 차지합니다. 아래 패킷 스위칭 특징을 보자.
 
 ### store-and-forward
 
@@ -103,7 +101,8 @@ FDM은 별도의 frequency를 할당받아 할당받은 frequency를 사용할 �
 
 # Internet structure
 
-인터넷은 이전 블로그에서 네트워크들의 네트워크라 했었다. 즉, 구조를 가지고있고 연결되어 있다. 수많은 Access network들은 각각 서로 1 to 1연결이 아닌 global ISP에 라우터들에 각각 연결되어 있고 이 ISP의 라우터들이 서로 경로를 가지고 있게 연결되도록 설계되었다. 그리고 이 ISP들끼리 역시 서로 연결되어있다(peering link) 또는, 이 ISP끼리 연결해 주는 것 중에 IXP가있다. 결론적으로 Access network가 ISP에 연결만 되어있으면 된다.
+인터넷은 이전 블로그에서 네트워크들의 네트워크라 했었다. 즉, 구조를 가지고있고 연결되어 있다.
+수많은 Access network들은 각각 서로 1 to 1연결이 아닌 global ISP에 라우터들에 각각 연결되어 있고 이 ISP의 라우터들이 서로 경로를 가지고 있게 연결되도록 설계되었다. 그리고 이 ISP들끼리 역시 서로 연결되어있다(peering link) 또는, 이 ISP끼리 연결해 주는 것 중에 IXP가있다. 결론적으로 Access network가 ISP에 연결만 되어있으면 된다.
 
 ---
 
@@ -111,15 +110,21 @@ FDM은 별도의 frequency를 할당받아 할당받은 frequency를 사용할 �
 
 # Four sources of packet delay
 
+![스크린샷 2024-06-18 오전 12.48.51.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ad79c095-c62e-4268-8fe9-c9d202ae92f5/fd97b372-340a-4dcd-9c6d-a375ad5b29ba/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-06-18_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.48.51.png)
+
 패킷이 한 홉을 지나가는데있어 delay가 일어나는 4가지 종류가 있다.
 
-**nodal processing** 노드에 패킷이 도착했을때 패킷이 도착하는데 있어 에러가 있었는지, 다음 어느링크로 가야할지 결정하는 경우이다.
+**nodal processing**
+노드에 패킷이 도착했을때 패킷이 도착하는데 있어 에러가 있었는지, 다음 어느링크로 가야할지 결정하는 경우이다.
 
-**queueing delay 버퍼에서 다음 경로로 가는데 해당 패킷의 차례가될 때까지 delay된다.**
+**queueing delay
+버퍼에서 다음 경로로 가는데 해당 패킷의 차례가될 때까지 delay된다.**
 
-**transmission delay 패킷을 링크에 넣어주는 시간이 있다. 패킷의 크기와 링크의 bandwith에 의해 결정된다. `L/R`**
+**transmission delay
+패킷을 링크에 넣어주는 시간이 있다. 패킷의 크기와 링크의 bandwith에 의해 결정된다. `L/R`**
 
-**propagation delay 비트가 링크에 실려있지만 시그널이 전달되는 시간이다. 링크의 길이, 전파속도에 따라 결정된다.**
+**propagation delay
+비트가 링크에 실려있지만 시그널이 전달되는 시간이다. 링크의 길이, 전파속도에 따라 결정된다.**
 
 ### packet loss
 
@@ -139,27 +144,31 @@ queue의 크기는 유한하다. 그런데 큐의 길이가 점점 길어져 꽉
 
 ### application
 
-유저 애플리케이션 프로그램에서 발생된 데이터(메세지)를 캡슐화해서 만들어준다. ex) FTP(file transfer), SMTP(email), HTTP(web)
+유저 애플리케이션 프로그램에서 발생된 데이터(메세지)를 캡슐화해서 만들어준다.
+ex) FTP(file transfer), SMTP(email), HTTP(web)
 
 ### transport
 
-source-destination(end to end)간에 어플리케이션 메세지를 전달해주는 역할 ex) TCP, UDP
+source-destination(end to end)간에 어플리케이션 메세지를 전달해주는 역할
+ex) TCP, UDP
 
 ### network
 
-라우팅을 통해 source에서 destination까지 전달하기위해 홉 바이 홉으로 전달할 수 있게 전달해주는 작업을 한다. ex) IP, routing protocols
+라우팅을 통해 source에서 destination까지 전달하기위해 홉 바이 홉으로 전달할 수 있게 전달해주는 작업을 한다.
+ex) IP, routing protocols
 
 ### link
 
-홉바이 홉으로 데이터를 전달해야하는데 이렇게 홉간의 연결을 해준다. ex)Ethernet, PPP
+홉바이 홉으로 데이터를 전달해야하는데 이렇게 홉간의 연결을 해준다.
+ex)Ethernet, PPP
 
 ### physical
 
 링크계층에서 한홉을 넘어가기 위해 physical계층에 데이터 실어주는 역할을 한다.
 
-# source에서 destination까지 가는 과정
+![스크린샷 2024-04-04 오후 7.18.37.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ad79c095-c62e-4268-8fe9-c9d202ae92f5/c206d6a7-069c-4867-a94d-cba165a05d6e/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-04-04_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_7.18.37.png)
 
-source에서 destination까지 가는 과정에 대해 풀어보겠다.
+위의 사진으로 source에서 destination까지 가는 과정에 대해 풀어보겠다.
 
 - 우선 애플리케이션에서 메세지를 생성한다.
 - process to process통신을 위해 transport계층에 내려주면서 destination까지 전달을 목표로한다. 이 때 destination에서 목표한 목적지에 도착했다 알려주기위해 segment헤더를 추가한다.

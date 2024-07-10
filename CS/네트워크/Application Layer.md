@@ -1,228 +1,182 @@
-# Application layer
+---
 
-어플리케이션 아키텍쳐는 두가지 구조를 가진다.
+인터넷이란 network of networks이다. 라우터, hosts, communication link등이 전부 섞여 뭉치뭉치 있다. 이런 뭉치를 네트워크라고 생각했을 때 internet은 이런 네트워크들의 네트워크라고 생각하면된다. 이런 인터넷은 모두가 같은 방식으로 소통해야하기에 표준화가 중요하다. 이 기관은 IETF이고 여기서 RFC라는 표준안들을 발표한다.
 
-- client-server
-- peer-to-peer(P2P)
+**hosts (end-systems)**
 
-## Client-Server architecture
+사용자의 어플리케이션을 호스팅해준다고 해서 호스트이다. 그리고 네트워크의 가장자리에 있다 해서end systems이라 부른다.
 
-### server host
+**router(switches)** 
 
-- 항상 on되어있는 상태이다.(always-on)
-- 영구적으로 할당된 IP주소를 가지고있다.
-- 데이터 센터 형식으로 존재하기도 합니다.
+사용자의 메세지를 목적지를 찾아가게해준다. 즉, source부터 destination까지 가기위해는 여러 라우터를 타야한다.
 
-### Client host
+**communication links**
 
-- server host와 커뮤니케이션 합니다.
-- 인터넷에 커넥트 될 때 마다 변경 가능한 IP주소를 가지고있다.
-- 인터넷에 연결되었다 안되었다 합니다.(서버 호스트와 반대로)
+이런 라우터와 host를 연결해주는 물리회선이다.
 
-## P2P architecture
+**protocols**
 
-- 커뮤니케이트하는 두 host가 user host에있습니다.
-- always-on server형태가 아닙니다.
-- 다른 peers에 요청하기도하고 제공하기도 합니다. 즉, 별도의 서버 없이 서로의 peer끼리 커뮤니케이트라 시스템의 규모가 커지더라도 확장성있게 가져갈 수있다,
-- 관리가 복잡하다.
+인터넷에서 메세지를 받고 제어하는 일련의 규칙이다. protocol에서는  보내고 받는 메세지의 포맷, 보내고 받는 순서, 메시지를 받았을 때 어떤 액션을 취해야하는지를 정의해준다.
 
-## Sockets
-
-프로토콜 레이어링에서 애플리케이션에서 메세지를 만들면 transport계층으로 내려주고 destination에서도 transport계층에서 application계층으로 올려주는데 이때 애플리케이션 계층과 transport계층간에 연결되는 문이 있는데 이를 소켓이라 한다.
-
-## Addressing processes
-
-메세지를 전달하기 위해서는 정확한 주소가 필요하다. 이때 호스트를 식별하는 IP주소와 포트번호를 통해서 식별합니다. 한 호스트에는 여러 프로세스가 발생하고있다.
-
-HTTP server의 포트번호는 80, mail server는 25와 같이 보편적으로 사용되는 server포트번호는 고정되어있다. 이와 같은 포트 번호를 well-known포트 번호라 한다
-
-## Transport Protocols Services
-
-### TCP
-
-- **reliable transport** → 연결 지향적(connection-oriented)으로 동작하기에 신뢰성이 높다.
-- **flow control** → sending TCP에서 빠르게 데이터를 보냄으로 수신 TCP에서 버퍼가 가득차게되면 커넥션을 통해 이 상황을 알리는 flow control을 한다.
-- **connection-oriented** → 상대방 TCP와 handshacking으로 연결을 지향한다. 이를 통해 각 TCP는 버퍼에 패킷을 받을 때 sending TCP가 더 빠른 속도로 보내면 받는 TCP의 버퍼는 너무 빠르게 보내고있다고 sending쪽에 알려줄 수 있고 flow를 조율할 수 있다.
-- **congestion control** → 네트워크가 오버로드 시 송신자 조절을 한다.
-
-### UDP
-
-- **unreliable data transfer →** 100% 데이터의 안정성을 보장받지 못한다.
-- 연결이 없습니다. 데이터를 전송하기 위해 사전에 연결을 설정할 필요가 없습니다. 이로 인해 속도가 빠르지만, 데이터 전송의 순서와 안정성에 대한 보장이 없습니다.
-- TCP는 순차적으로 데이터를 전송하는데 반해 데이터를 실시간으로 전송하는 데 적합합니다. 실시간 비디오 스트리밍, 음성 통화, 온라인 게임 등에서 사용됩니다. 신속한 데이터 전달이 중요한 경우에 적합합니다.
-
-## Application protocol에서 정의된 것
-
-- 교환하는 메세지 종류를 정의 합니다. (e.g> request, response)
-- 메세지 syntax정의
-- 어떤 request를 받을때 어떤 타이밍에 어떻게 response해야하는지에 대한 규칙을 정의
-- HTTP, SMTP와 같은 오픈된 application protocol은 RFC문서에 전부 오픈되어있다.
+- IETF: 인터넷 프로토콜 표준화 기관
+- RFC: 표준안 발표
 
 ---
 
-# Web and HTTP
+# Network Edge
 
-웹페이지는 여러개의 objects로 구성이되고 웹페이지의 틀은 base HTML-file을 묘사해 주고 이 파일에는 여러 objects들에 대한 reference정보가 있다.(object는 HTML file, JPEG image, Java applet, audio file…등)
+### access networks and physical media
 
-## HTTP(hypertext transfer protocol)
+유저 호스트(end systems)를 네트워크에 연결해주는걸 Access Networks라고한다. 여기서 중요한 개념으로 bandwith(transmission rate)가 있는데 이 bandwith는 단위 시간당 실어나를 수 있는 비트 수를 의미한다. 흔히 우리가 Mbps, Gbps라고 불렀던 것이다. 이 bandwith는 공유할(shared)수도 분리되어(dedicated) 사용 될 수도 있다.
 
-web application을 위해 디자인 되었다. client-serer모델을 사용하고있다. 여기서 브라우저가 client프로세스이다. 웹페이에서 특정 url로 진입시 서버에 필요한 내용을 request하고 받아서 화면을 보여줍니다. server프로세스는 request를 기다리다 요청이 들어오면 해당하는 웹페이지(objects)를 전송해주는 역할을 한다.
+### Access net: digital subscriber line (DSL)
 
-HTTP라는 application protocol은 전송 요청을 TCP에 요청한다. HTTP가 서포트하는 메인 application이 web이고 웹은 데이터의 무결성이 중요하기 떄문에 TCP에 요청한다.
+집에 다 kt, skt, lgu+같은 회사들이 인터넷에 연결해준다. 이런 회사들이 Access network을 제공해주는 회사이다.
 
-사용자가 url을 입력시 웹서버에서 그 url에대한 웹페이지를 받기위해 HTTP request message를 만드는데 그전에 TCP를 사용하기에 TCP커넥션을 initiate해야합니다. 이 때 HTTP는 항상 port번호 80번이고 서버의 IP주소와 port번호를 이용해서 서로 handshacking이 맺어지고 그 후 HTTP메세지를 주고받습니다. 이렇게 데이터를 주고 받고 TCP커넥션이 닫히게 됩니다.
+이렇게 전화 회사에서 access networks를 제공해줄 수있게 해주는게 DSL이다. 그리고 이 전화회선은 옆집과 함께 shared하는게 아닌 dedicated즉 분리되어있다. 컴퓨터는 DSL모뎀에 연결된다. 그리고 각집에서 DSL모뎀을 통해서 데이터가 전화 회선을 통해 회사의 central office에 DSLAM(DSL Access Multiplexer)로 보내주게된다. 이 때 voice이면 telephone networks로 데이터면 internet networks로 연결 해 준다.
 
-그리고 HTTP는 ‘stateless’입니다. 즉, http는 유저가 이전에 보낸 request가 어떤것이였는지 기억하지 않습니다. HTTP는 또한 TCP connection은 response를 주면 연결을 close하는 Non-persistent이다.
+### Access net: cable networks
 
-# HTTP
+DSL이 아닌 케이블 회사를 통해 연결될 때는 CMTS라는 멀티플렉싱 장비가있다. 케이블 모뎀을 통해 나온 데이터를 인터넷으로 넘겨주는 역할을 한다.
 
-TCP위에서 동작
+이 케이블 네트워크와 DSL은 서로 다른점으로 하나의 회선을 탄다. 즉, 하나의 회선을 공유한다. bandwith가 큰 회선을 하나 연결하고 해당 링크를 여러 집에 shared한다. 즉, dedicated link가 아닌 shared link이다. 여기서 이 링크를 HFC(hybrid fiber coax)라고 부른다. 집집마다 연결은 coax로 연결 그리고 큰 대역폭을 전송해줘야하는 CMTS에서 인터넷으로의 연결은 fiber로 연결되어있다.
 
-### [ Non-persistent HTTP ]
+## Access Net: home network
 
-하나의 오브젝트 보내면 서버에서 TCP커넥션을 닫는다.
+우린 집에서 주로 와이파이를 사용한다. 이는 집 안에서 home network를 구성하고있기에 가능하다. 데스크탑이 홈네트워크로 연결 → 홈네트워크는 케이블 네트워크, 전화회사 네트워크로 연결되어있고 home network의 코어에 라우터가있다. 이 라우터가 집의 각각의 end system을 묶어 연결해준다. 그리고 이 라우터가 cable 모뎀, DSL 모뎀에 연결되어 멀티플렉싱 장비가있는 central office로 데이터를 전송한다.
 
-여러개의 오브젝트로 구성되어있다면 각 오브젝트를 위해 하나의 오브젝트 보내고 닫고를 반복해야한다.
+## 집이아닌 학교나 기관은 어떻게 연결될까?
 
-### 순서
+학교에서 공부를 하면 컴퓨터실을 예로 뒷편에 큰 검정색의 물체가 있는걸 본 적있다. 이를 ethernet switch라고 하는데 ethernet switch의 수많은 포트는 각각의 end systems를 연결해준다. 그리고 이런 ethernet switch도 한개가 아니라 학교나 기관(회사)에 많이 있다. 이런 이더넷 스위치는 학교 전체나 회사 전체로 연결해주는 라우터로 연결된다. 그리고 이 라우터는 인터넷에 연결해주는 ISP(Internet Service Provider)의 라우터로 연결된다. 그리고 dedicated line을통해 라우터가 ISP에 직접 연결된다.
 
-1. 특정 url을 검색한다.
-2. client가 server(80번 포트번호를 가지고 대기중)로 tcp커넥션을 initiate한다.
-3. server가 accept하게 되어 커넥션을 맺고 클라이언트에 알려준다.
-4. client가 리퀘스트 메세지를 전송한다.
-5. server가 tcp커넥션을 종료한다.
-6. client는 리스폰스 메세지에 실려있는 html file을 디스플레이 해준다.
-7. html file을 파싱해 추가적인 reference jpeg objects를 발견하지만, 이미 tcp커넥션이 닫겨있음으로 2-6을 반복한다.
+## Host: sends packets of data
 
-### response time
-유저가 url을 타이핑한 후 웹페이지가 디스플레이되기까지 걸린 시간을 말한다.response time은 아래와같다
+네트워크 어플리케이션을 호스트한다고해서 호스트라 부른다. 이 호스트에서는 어플리케이션 메세지가 발생하고 이를 Access Network로 내보내게된다. 이때 패킷이라는 chunk로 잘라서 보낸다. 이때 패킷 전송 delay의 계산은 아래와 같다.
 
-response time = 2RTT + file transmission time
+`packet transmission delay = L(bits) / R(bits per seconds)` 즉, 패킷의 크기를 Access Network의 transmission rate로 나누는 것이다.
 
-RTT(Round Trip Time)란 아주 작은 크기의 패킷이 클라이언트에서 서버에 갔다가 클라이언트로 돌아오는데까지 걸린 시간을 말한다.
+## Physical media
 
-한번의 오브젝트를 받은 후 서버 tcp를 닫아버리기 때문에 매 오브젝트마다 tcp새로 열어야한다.
+링크의 종류는 두가지로 나뉜다. 물리적 와이어를 사용하는 guided media, 사용하지 않는 unguided media이다.
 
-→ 각 오브젝트마다 2번의 RTT필요 (5번의 오브젝트라면 2 * 5 )
+Guided Media 사용
 
-### [ Persistent HTTP ]
+- copper (Ethernet)
+- fiber, coax (HFC)
 
-TCP 커넥션 오픈한채로 유지하므로 request message ↔ response message 계속 주고 받는다.
+Unguided media 사용
 
-request message 무시할 만큼 짧다고 해도 1RTT이다.
+- radio(wifi, cellular)
 
-### [ HTTP Requset Message ]
-
-HTTP메세지는 두가지 종류를 사용합니다. reqiest, reponse이다. 이 메세지는 아스키코드로 되어있다.
-
-**request line** 어떤 작업을 해달라고 서버에 요청하는 것이며 메서드(GET) 뒤의 파일을 보내달라고 요청하는 것 입니다.
-
-**HOST** HTTP서버의 호스트입니다.
-
-**User-Agent** 클라이언트 브라우저에대한 정보입니다.
-
-**Accept-Language** 특정 웹페이지에 여러 언어 버전이있습니다. 이렇게 en-us로 보내면 영어버전을 서버에서 보내주게됩니다.
-
-**Connection** 서버에게 가능하면 TCP connection을 keep open하게(persistent)동작하게 하도록 요청하는 것 입니다.
-
-# HTTP response message
-**Status line** 서버의 HTTP버전, status코드 정보를 제공한다.
-
-Date 리스폰스를 제공하는 시간
-
-**Server** 서버의 종류 정보 제공
-
-**Last-Modified** 이 웹페이지가 마지막으로 수정된 시간 정보
-
-**Connection** 요청한대로 Connection을 닫지않고 open된 상태로 제공하겠단 의미
-
-## Status codes
-
-**200ok** request가 성공하여 response의 body에 request된 objects가 실려있다는 정보
-
-**301 Moved Permanently** request된 objects가 다른곳에 옮겨져 저장되어있다. 이 경우 헤더라인에 location이 존재하고 값으로는 objects가 저장된 url정보를 제공한다.
-
-**400 Bad Request** request메세지가 잘못되어 이해가 불가능하다.
-
-**404 Not Found** request document가 이 웹서버에는 없다는 뜻
-
-**505 HTTP Version Not Supported** 클라이언트 HTTP버전을 서버가 서포트 불가능하다.
-
-## User-server state: cookies
-
-목적 → http가 stateless인데 이를 보완해 서버사이트와 트랜잭션에 히스토리를 유지하게 하기 위해 사용
-1. client에서 아마존 server측에 msg를 발생시킨다.
-2. 아마존 서버는 이 client에 ID를 생성해 부여하고 이 정보를 backend database에 추가한다.
-3. response message에 header line에 set-cookie정보를 전송한다.
-4. client는 이 cookie데이터를 cookie file에 저장한다.
-5. 추후에는 서버와 client의 통신시 해당 쿠키를 통해 database에 access한다.
-
-이렇게 쿠키를 사용함으로 유저의 로그인 상태를 계속 유지할 수 있다. 흔히 우리가 부르는 세션로그인이 결국은 쿠키 때문에 가능하다.
-
-## Web caches
-
-cache를 로컬 사이트에 둠으로 server까지 안가더라도 어떠한 object를 가져올 수 있게 한다. 브라우저에서 캐시를 통해서 web access를 가능하게 셋팅을 한다 했을 때 브라우져는 http request시 cache에 요청하고 만약 해당 데이터가 있는 경우는 바로 response를 해주고 아닌경우는 서버에 request해 object를 받아온다. 이처럼 서버같은 역할을 해준다 해서 web cache를 proxy server라 부르기도 한다.
-
-회사, 대학, 지역 ISP에서 web cache를 사용하는 이유는 response time이 줄어들고 또한 상위 ISP와 통신 할 떄 요청이 많아지면 traffic으로인해 높은 throuput을 요구하게된다. 하지만 web cache로 인해 상위 ISP와의 traffic을 감소할 수 있다.
-
-web cache없이 서로의 ISP가 서로 access link를 통해 커뮤니케이션할 때 로컬에서 100Mbps로 데이터를 밀어 넣는데 ISP상에서 throuput이 이 데이터를 밀어 넣는 양을 견디지 못하면 문제가 된다. 이 상황에서 물론 throuput을 늘려 해결 할 수 있지만 이러면 높은 cost가 발생할 것이다. 그렇기에 로컬 server에서 web cache를 이용해 traffic감소를 할 수 있다.
-
-### Conditional GET
-
-하지만 위의 경우 로컬 cache에서 계속 같은 object만 전송하면 실제 server에서는 해당 data에 변화가 있었을 수 있다. 그렇기에 server에 Conditional GET을 요청한다. 헤더 정보에 `if-modified-since:<date>` 를 전송하고 date에는 last-modified에 정보를 보낸다. 만약 modified되지 않았다면 response로 throuput에서는 영향을 주지 않게 modified되지 않았다는 정보와 함께 object는 전송하지 않는다. 그렇지 않고 변경이 있었던 경우는 data를 response로 보내준다.
+여기서 radio link type의 예로 LAN(wifi), wide-area(cellular), statellite가 있습니다. 이는 물리적인 케이블에 비해 단점으로 방해물을 만났을 때 시그널이 reflection이 일어날 수있고 물리적인 미디어를 타는게 아니라 주변 노이즈에 민감하고 radio signal끼리도 서로 방해된다. 장점으로는 물리적 와이어를 설치하지 않고도 통신이 가능하다는 장점이 있다.
 
 ---
 
-# Electronic mail
+# Network Core
 
-mail server는 두가지 스트럭쳐를 가지고있다. mailbox, message queue가 있다. 만약 user가 메일을 작성해서 전송하면 message queue에 저장된다. mailbox는 사용자 별로 있고 message queue는 사용자 별로 있지 않다.
+network edge에서 각 호스트를 하나로 연결해주는 router의 목적은 source로부터 destination까지 유저의 어플리케이션 메세지를 전달하는게 목표이다. 이때 전달해주는 방법은 Circuit switching, packet switching 크게 두가지가 있다.
 
-**user Agent로는** eg) Outlook, iPhone mail client가 있다.
+## Circuit switching
 
-유저가 메일을 작성하면 SMTP프로토콜을 통해 sender’s mail server에 전송되고 이를 다시 수신자 에게 전송하는데 역시 SMTP를 사용하게된다. 그리고 최종적으로 mail을 받을 때는 POP, IMAP, HTTP 프로토콜이 사용된다.
+전화 네트워크에서 사용되었다. 특징으로 유저 메세지를 전달하기전 무조건 Call이 있어야한다. 이때 유저가 call을 하면 call set up과정을 거친다. 이때 하는일은 source로 부터 destination까지 어떤 라우터를 거쳐갈지 경로를 정하고 해당 자원을 예약(resource reservation)된다.
 
-**SMTP** 프로토콜은 TCP위에서 동작한다. well-known port는 25번에서 대기한다. 전송할 땐 handshaking → 메세지를 전송 → closure 3가지로 이뤄진다.
+### FDM(Frequency Division Multiplexing) vs TDM(Time Division Multiplexing)
 
----
+FDM은 별도의 frequency를 할당받아 할당받은 frequency를 사용할 수있다. TDM은 frequency전체를 사용자가 사용할 수있게 하되 시간으로 잘라서 사용할 수 있게 제공된다.
 
-# DNS: domain name system
+## Packet Switching
 
-웹브라우져에 웹사이트를 access할 때 www.naver.com과 같이 작성한다. 우리는 이를 host name 또는 domain name이라 한다. 일반 사용자들은 이렇게 domain name을 작성하지만 클라이언트 프로세스에서 서버 프로세스를 컨택할 땐 host name이 아닌 32bit로 이루어진 IP주소를 사용한다. **그래서 host name을 IP주소로 매핑해 주는 system이 필요하다.** 이러한 매핑을 제공해주는 시스템이 DNS이다.
+인터넷이 나오면서 데이터 네트워크에는 circuit switching이 매우 비효율 적이다. 순간적으로 어플리케이션 메세지가 발생을 했다가 한동안 아무런 요청이 없을 수도있는데 circuit switching처럼 하나의 경로를 할당받는게 매우 비효율 적이기 때문이다. 그래서 새로운 기법으로 packet switching이 등장했다.
 
-여기서 DNS는 웹 서버가 여러개인 경우 사용자가 host name으로 접근시 서로 다른 웹 서버로 load distribution 역할 역시 수행한다. 이런 DNS는 유지보수, traffic volume등의 이유로 centralize되지 않고 분산해 놓는다.
+패킷 스위칭은 call set up과정이 없다. 즉, resource reservation역시 일어나지 않는다. 필요한 경우 그때 그때 사용할 수있게 해준다.
+만약 유저 애플리케이션 메세지의 크기가 크다면 패킷으로 잘라서 Access Network로 전송하여 각 패킷이 링크를 점유하는 시간을 고정적으로 차지합니다. 아래 패킷 스위칭 특징을 보자.
 
-TLD(Top-Level-Domain)는 DNS에서 가장 높은 수준의 도메인을 의미한다. 주로 보는 `.com` `.net` `.kr` 과 같은 부분을 TLD라 한다.
+### store-and-forward
 
-이런 DNS는 3단계 hierarchy로 나눠져 있는데 아래와 같다.
+패킷스위칭에서 라우터는 패킷 전체가 도달할 때 까지 받는 작업(store)만 하게된다. 그 후 전부 받으면 주소를 파싱해서 보내줍니다. 이를 store-and-forward라고한다. (각 패킷 마다 목적지 정보를 가지고있다)
 
-- authoratative → 기관내 등록된 호스트들에 대한 host to IP주소에 대한 정보를 알고 있다.
-- TLD → 기관별 authoratative 서버 정보
-- Root → 가장 큰 도메인인 TLD 서버에 대한 정보
+### queing delay, loss
 
-### DNS : caching, updation, records
+패킷이 목적지로 보내지는 것 보다 받는 양이 더 많으면 queing delay가 발생한다. 이는 resource reservation이 이뤄지지 않고 통신을 했기 때문이다. 이때 queing할 수 있는 공간이 full로 채워졌을 때 계속 패킷 메세지가 라우터에서 받을 때 데이터 Loss가 발생할 수있다.
 
-DNS 시스템에서 메인 시스템이 쿼리에 대한 reply를 일시적으로 캐싱을 할 수 있어 reply의 response 시간을 줄일 수 있고 traffic 역시 줄일 수 있다. 이런 캐싱은 항상 out-of-date가 문제가 된다. 그렇기에 전달받은 TTL이 만료 될 때 까지 만 캐싱한다.
+# Internet structure
 
-## DNS records
-
-DNS는 distributed database에 대한 정보를 저장하고있다. 이 저장하는 정보를 Resource Records라고 부른다. `RR format: (name, value, type, ttl)` 로 이루어져있다. 여기서 name과 value를 결정짓는 것이 type이다.
-
-- `type=A`
-    - name은 hostname
-    - value는 IP 주소
-- `type=CNAME`
-    - name에 alias name이 들어간다.
-    - value에는 canonical(실제 이름)이 들어간다 예로 www.ibm.com의 canocical name은 servereast.backup.ibm.com과 같을 수 있다.
-- `type=NS` (TLD서버에서 알고있다. → authoritative server정보를 저장함)
-    - name에는 domain
-    - value에는 authoritative name server
+인터넷은 이전 블로그에서 네트워크들의 네트워크라 했었다. 즉, 구조를 가지고있고 연결되어 있다.
+수많은 Access network들은 각각 서로 1 to 1연결이 아닌 global ISP에 라우터들에 각각 연결되어 있고 이 ISP의 라우터들이 서로 경로를 가지고 있게 연결되도록 설계되었다. 그리고 이 ISP들끼리 역시 서로 연결되어있다(peering link) 또는, 이 ISP끼리 연결해 주는 것 중에 IXP가있다. 결론적으로 Access network가 ISP에 연결만 되어있으면 된다.
 
 ---
 
-### P2P applications
+# Delay, loss, throughput in networks
 
-- end systems끼리 서로 communicate
-- always-on-server가 아니다
-- torent, skype가 예로 있다.
+# Four sources of packet delay
 
-p2p구조의 경우에는 파일을 원하는 클라이언트 수가 늘어나면 파일을 업로드할 수있는 capability도 늘어나 클라이언트 수에 비례해 파일 업로드시간이 늘어나지 않아 확장성이 좋다.
+![스크린샷 2024-06-18 오전 12.48.51.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ad79c095-c62e-4268-8fe9-c9d202ae92f5/fd97b372-340a-4dcd-9c6d-a375ad5b29ba/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-06-18_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.48.51.png)
+
+패킷이 한 홉을 지나가는데있어 delay가 일어나는 4가지 종류가 있다.
+
+**nodal processing**
+노드에 패킷이 도착했을때 패킷이 도착하는데 있어 에러가 있었는지, 다음 어느링크로 가야할지 결정하는 경우이다.
+
+**queueing delay
+버퍼에서 다음 경로로 가는데 해당 패킷의 차례가될 때까지 delay된다.**
+
+**transmission delay
+패킷을 링크에 넣어주는 시간이 있다. 패킷의 크기와 링크의 bandwith에 의해 결정된다. `L/R`**
+
+**propagation delay
+비트가 링크에 실려있지만 시그널이 전달되는 시간이다. 링크의 길이, 전파속도에 따라 결정된다.**
+
+### packet loss
+
+queue의 크기는 유한하다. 그런데 큐의 길이가 점점 길어져 꽉 차게된 경우에 패킷이 도착하면 패킷을 버릴 수 밖에 없고 이 상황에서 loss가 발생된다.
+
+### Throughput
+
+단위 시간당 source로부터 destination까지 배달한 트래픽의 양이다. 여기서 source to destination까지 연결된 수많은 링크중 가장 capacity가 작은 링크가 이 Throughput을 결정하고 해당 링크를 bottleneck link라고한다. 그리고 bottleneck현상은 network core가 아닌 network edge에서 발생한다.
+
+---
+
+# Protocol Layers
+
+프로토콜은 방대하고 복잡해서 레이어링 구조를 가지고있다. 이렇게 레이어링으로 모듈화 하면 복잡한 시스템에서 각각의 피스를 identification하고 관계를 정의하기에 용이해진다. 또한, 업데이트하고 유지보수하는데 용이하다. 하지만 이런 레이어링으로 인해 각 레이어는 각각의 기능을 동작하는데 중복된 기능이 오버래핑되는 경우가 있다.
+
+## Internet protocol stack
+
+### application
+
+유저 애플리케이션 프로그램에서 발생된 데이터(메세지)를 캡슐화해서 만들어준다.
+ex) FTP(file transfer), SMTP(email), HTTP(web)
+
+### transport
+
+source-destination(end to end)간에 어플리케이션 메세지를 전달해주는 역할
+ex) TCP, UDP
+
+### network
+
+라우팅을 통해 source에서 destination까지 전달하기위해 홉 바이 홉으로 전달할 수 있게 전달해주는 작업을 한다.
+ex) IP, routing protocols
+
+### link
+
+홉바이 홉으로 데이터를 전달해야하는데 이렇게 홉간의 연결을 해준다.
+ex)Ethernet, PPP
+
+### physical
+
+링크계층에서 한홉을 넘어가기 위해 physical계층에 데이터 실어주는 역할을 한다.
+
+![스크린샷 2024-04-04 오후 7.18.37.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ad79c095-c62e-4268-8fe9-c9d202ae92f5/c206d6a7-069c-4867-a94d-cba165a05d6e/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-04-04_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_7.18.37.png)
+
+위의 사진으로 source에서 destination까지 가는 과정에 대해 풀어보겠다.
+
+- 우선 애플리케이션에서 메세지를 생성한다.
+- process to process통신을 위해 transport계층에 내려주면서 destination까지 전달을 목표로한다. 이 때 destination에서 목표한 목적지에 도착했다 알려주기위해 segment헤더를 추가한다.
+- 네트워크 계층에선 host to host딜리버리를 제대로 동작하게 하기위해 헤더를 붙히게되는데 이는 segment에 추가로 헤더를 설정하고 이를 데이터그램이라한다.
+- 링크 계층에 전달하며 다음 홉을 건너갈 것을 부탁하고 다시 헤더를 추가하고 이를 Frame이라 한다.
+- 물리 계층을통해 데이터를 밀어넣게 되고 switch의 물리 계층에서 받게되고 이를 링크 계층으로 다시 올려주어 다음 홉으로 넘어가게한다. 이 때 switch에서 다음 홉을 갈 수있도록 다시 Frame을 만들어 router에 전달한다.
+- 다시 라우터의 물리계층에서 받아 switch의 frame을 복구해서 헤더를 확인해서 한홉을 잘 건너왔다는 것을 확인 후 해당 헤더를 제거하고 네트워크계층으로 올려준다.
+- router의 network계층에서 source네트워크에서 받은 헤더를 확인해 목적지를 위한 다음 홉을 결정하고 다시 헤더를 제거하고 추가하여 destination물리계층에서 받는다.
+- destination에서 link에서 받은 frame은 라우터에서 생성한 frame을 받게되고 한 홉을 잘 건너왔다는 것을 확인후 제거후 네트워크 계층에 올려주고 네트워크 계층역시 router의 네트워크 계층에서 만든 데이터그램을 확인후 내가 destination인걸 확인 후 다음 홉으로 보내는 것이 아닌 destination에서 transport계층으로 올려주고 transport에서 source의 transport에서 만든 segment를 확인 후 최종적으로 헤더를 제거후 최초 source에서 생성한 메세지만 destination의 애플리케이션 계층으로 올려줍니다.
+
+ps) 각 프로토콜 계층에서 만든 데이터 유닛을 PDU(protocol data unit)이라 부른다
