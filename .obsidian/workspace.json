@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "study/React-Query 이전.md",
+                "file": "javascript/데이터 타입.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/React-Query 이전.md",
+                "file": "javascript/데이터 타입.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/React-Query 이전.md",
+                "file": "javascript/데이터 타입.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/React-Query 이전.md"
+                "file": "javascript/데이터 타입.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "7b8e4cb665dc619b",
   "lastOpenFiles": [
-    "CS/네트워크/Application Layer.md",
     "study/React-Query 이전.md",
+    "CS/네트워크/Application Layer.md",
     "study",
     "CS/네트워크/What is Internet?.md",
     "CS/네트워크/Principles of network, applications, Web and HTTP.md",
