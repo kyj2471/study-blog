@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/데이터 타입.md",
+                "file": "javascript/클래스.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "javascript/데이터 타입.md",
+                "file": "javascript/클래스.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "javascript/데이터 타입.md",
+                "file": "javascript/클래스.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "javascript/데이터 타입.md"
+                "file": "javascript/클래스.md"
               }
             }
           }
@@ -148,6 +148,14 @@
   },
   "active": "7b8e4cb665dc619b",
   "lastOpenFiles": [
+    "javascript/프로토타입.md",
+    "javascript/무제 파일.md",
+    "javascript/클로저.md",
+    "javascript/콜백함수.md",
+    "javascript/This.md",
+    "javascript/총정리.md",
+    "javascript/실행 컨텍스트.md",
+    "javascript/데이터 타입.md",
     "study/React-Query 이전.md",
     "CS/네트워크/Application Layer.md",
     "study",
@@ -156,17 +164,10 @@
     "CS/네트워크/FTP.md",
     "CS/네트워크/Network Edge, Network Core.md",
     "CS/네트워크/Delay, loss, throughput in networks, Protocol layers, service models.md",
-    "javascript/This.md",
-    "javascript/총정리.md",
-    "javascript/콜백함수.md",
     "javascript/클래스.md",
     "CS/네트워크",
     "CS",
     "스크린샷 2024-03-28 오후 9.41.40.png",
-    "javascript/프로토타입.md",
-    "javascript/클로저.md",
-    "javascript/실행 컨텍스트.md",
-    "javascript/데이터 타입.md",
     "README.md",
     "javascript/도서 정리/코어자바스크립트/데이터 타입.md",
     "javascript/도서 정리/코어자바스크립트",
