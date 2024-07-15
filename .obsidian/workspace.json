@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/브라우저 렌더링 방식.md",
+                "file": "웹을 지탱하는 기술/URI.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "javascript/브라우저 렌더링 방식.md",
+                "file": "웹을 지탱하는 기술/URI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "javascript/브라우저 렌더링 방식.md",
+                "file": "웹을 지탱하는 기술/URI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "javascript/브라우저 렌더링 방식.md"
+                "file": "웹을 지탱하는 기술/URI.md"
               }
             }
           }
@@ -148,8 +148,11 @@
   },
   "active": "7b8e4cb665dc619b",
   "lastOpenFiles": [
-    "javascript/일급 객체.md",
+    "웹을 지탱하는 기술/웹 개론 (웹 역사, REST-웹 아키텍쳐 스타일).md",
+    "웹을 지탱하는 기술/URI.md",
     "javascript/브라우저 렌더링 방식.md",
+    "웹을 지탱하는 기술",
+    "javascript/일급 객체.md",
     "CS/네트워크/index.html",
     "CS/네트워크/Network.md",
     "javascript/클래스.md",
