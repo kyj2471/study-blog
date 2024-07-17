@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "웹을 지탱하는 기술/URI.md",
+                "file": "CS/네트워크/Link Layer.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "웹을 지탱하는 기술/URI.md",
+                "file": "CS/네트워크/Link Layer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "웹을 지탱하는 기술/URI.md",
+                "file": "CS/네트워크/Link Layer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "웹을 지탱하는 기술/URI.md"
+                "file": "CS/네트워크/Link Layer.md"
               }
             }
           }
@@ -148,13 +148,18 @@
   },
   "active": "7b8e4cb665dc619b",
   "lastOpenFiles": [
-    "웹을 지탱하는 기술/웹 개론 (웹 역사, REST-웹 아키텍쳐 스타일).md",
+    "CS/네트워크/Network Layer-Broadcast and multicast routing.md",
+    "CS/네트워크/Link Layer.md",
+    "CS/네트워크/Network Layer-Routing in internet.md",
+    "CS/네트워크/Network Layer-Routing Algorithms.md",
+    "CS/네트워크/Network Layer- Router, IP Protocol.md",
+    "CS/네트워크/Application Layer.md",
     "웹을 지탱하는 기술/URI.md",
+    "웹을 지탱하는 기술/웹 개론 (웹 역사, REST-웹 아키텍쳐 스타일).md",
     "javascript/브라우저 렌더링 방식.md",
     "웹을 지탱하는 기술",
     "javascript/일급 객체.md",
     "CS/네트워크/index.html",
-    "CS/네트워크/Network.md",
     "javascript/클래스.md",
     "javascript/프로토타입.md",
     "javascript/클로저.md",
@@ -164,7 +169,6 @@
     "javascript/실행 컨텍스트.md",
     "javascript/데이터 타입.md",
     "study/React-Query 이전.md",
-    "CS/네트워크/Application Layer.md",
     "study",
     "CS/네트워크/What is Internet?.md",
     "CS/네트워크/Principles of network, applications, Web and HTTP.md",
@@ -178,8 +182,6 @@
     "javascript/도서 정리/코어자바스크립트/데이터 타입.md",
     "javascript/도서 정리/코어자바스크립트",
     "javascript/도서 정리",
-    "javascript/test파일입니다..md",
-    "javascript/2번째 테스트.md",
     "javascript"
   ]
 }
