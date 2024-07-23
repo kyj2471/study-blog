@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jest/Jest.md",
+                "file": "study/React-Query 이전.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Jest/Jest.md",
+                "file": "study/React-Query 이전.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Jest/Jest.md",
+                "file": "study/React-Query 이전.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Jest/Jest.md"
+                "file": "study/React-Query 이전.md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "7b8e4cb665dc619b",
   "lastOpenFiles": [
-    "웹을 지탱하는 기술/HTTP (method, header, vs HTTPS).md",
+    "work experience/트레져 데이터 유저 행동 패턴 분석.md",
     "Jest/Jest.md",
+    "work experience",
+    "웹을 지탱하는 기술/HTTP (method, header, vs HTTPS).md",
     "Jest",
     "웹을 지탱하는 기술/URI.md",
     "웹을 지탱하는 기술/웹 개론 (웹 역사, REST-웹 아키텍쳐 스타일).md",
@@ -177,7 +179,6 @@
     "CS/네트워크/Principles of network, applications, Web and HTTP.md",
     "CS/네트워크/FTP.md",
     "CS/네트워크/Network Edge, Network Core.md",
-    "CS/네트워크/Delay, loss, throughput in networks, Protocol layers, service models.md",
     "CS/네트워크",
     "CS",
     "스크린샷 2024-03-28 오후 9.41.40.png",
