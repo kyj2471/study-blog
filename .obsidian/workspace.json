@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "study/React-Query 이전.md",
+                "file": "etc/esLint, prettier.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/React-Query 이전.md",
+                "file": "etc/esLint, prettier.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/React-Query 이전.md",
+                "file": "etc/esLint, prettier.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/React-Query 이전.md"
+                "file": "etc/esLint, prettier.md"
               }
             }
           }
@@ -148,6 +148,9 @@
   },
   "active": "7b8e4cb665dc619b",
   "lastOpenFiles": [
+    "study/React-Query 이전.md",
+    "etc/esLint, prettier.md",
+    "etc",
     "work experience/트레져 데이터 유저 행동 패턴 분석.md",
     "Jest/Jest.md",
     "work experience",
@@ -173,17 +176,14 @@
     "javascript/총정리.md",
     "javascript/실행 컨텍스트.md",
     "javascript/데이터 타입.md",
-    "study/React-Query 이전.md",
     "study",
     "CS/네트워크/What is Internet?.md",
     "CS/네트워크/Principles of network, applications, Web and HTTP.md",
     "CS/네트워크/FTP.md",
-    "CS/네트워크/Network Edge, Network Core.md",
     "CS/네트워크",
     "CS",
     "스크린샷 2024-03-28 오후 9.41.40.png",
     "javascript/도서 정리/코어자바스크립트",
-    "javascript/도서 정리",
-    "javascript"
+    "javascript/도서 정리"
   ]
 }
