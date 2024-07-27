@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "etc/esLint, prettier.md",
+                "file": "etc/Babel (바벨).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "etc/esLint, prettier.md",
+                "file": "etc/Babel (바벨).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "etc/esLint, prettier.md",
+                "file": "etc/Babel (바벨).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "etc/esLint, prettier.md"
+                "file": "etc/Babel (바벨).md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "7b8e4cb665dc619b",
   "lastOpenFiles": [
-    "study/React-Query 이전.md",
     "etc/esLint, prettier.md",
+    "etc/Babel (바벨).md",
+    "study/React-Query 이전.md",
     "etc",
     "work experience/트레져 데이터 유저 행동 패턴 분석.md",
     "Jest/Jest.md",
@@ -179,7 +180,6 @@
     "study",
     "CS/네트워크/What is Internet?.md",
     "CS/네트워크/Principles of network, applications, Web and HTTP.md",
-    "CS/네트워크/FTP.md",
     "CS/네트워크",
     "CS",
     "스크린샷 2024-03-28 오후 9.41.40.png",
