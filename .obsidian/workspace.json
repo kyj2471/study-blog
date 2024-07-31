@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "db24344a951b2622",
+        "id": "0e1c58c7f761f869",
         "type": "tabs",
         "children": [
           {
-            "id": "7b8e4cb665dc619b",
+            "id": "c6d0632dfbaa6299",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "work experience/Code splitting.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "work experience/Code splitting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "work experience/Code splitting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "work experience/Code splitting.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,10 +138,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "7b8e4cb665dc619b",
+  "active": "c6d0632dfbaa6299",
   "lastOpenFiles": [
-    "Jest/Jest.md",
     "work experience/Code splitting.md",
+    "Jest/Jest.md",
     "work experience/SEO 개선 (성능 개선).md",
     "etc/Babel (바벨).md",
     "etc/esLint, prettier.md",
