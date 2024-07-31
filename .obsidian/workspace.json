@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "work experience/SEO 개선 (성능 개선).md",
+                "file": "work experience/Code splitting.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "work experience/SEO 개선 (성능 개선).md",
+                "file": "work experience/Code splitting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "work experience/SEO 개선 (성능 개선).md",
+                "file": "work experience/Code splitting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "work experience/SEO 개선 (성능 개선).md"
+                "file": "work experience/Code splitting.md"
               }
             }
           }
@@ -148,13 +148,14 @@
   },
   "active": "7b8e4cb665dc619b",
   "lastOpenFiles": [
-    "etc/Babel (바벨).md",
+    "Jest/Jest.md",
+    "work experience/Code splitting.md",
     "work experience/SEO 개선 (성능 개선).md",
+    "etc/Babel (바벨).md",
     "etc/esLint, prettier.md",
     "study/React-Query 이전.md",
     "etc",
     "work experience/트레져 데이터 유저 행동 패턴 분석.md",
-    "Jest/Jest.md",
     "work experience",
     "웹을 지탱하는 기술/HTTP (method, header, vs HTTPS).md",
     "Jest",
@@ -179,7 +180,6 @@
     "javascript/실행 컨텍스트.md",
     "javascript/데이터 타입.md",
     "study",
-    "CS/네트워크/What is Internet?.md",
     "CS/네트워크",
     "CS",
     "스크린샷 2024-03-28 오후 9.41.40.png",
