@@ -1,4 +1,4 @@
----
+
 
 transport layer는 application 커뮤니케이션 간에 logical 커뮤니케이션을 제공합니다.
 프로토콜로는 TCP, UDP가 대표적이다 각각의 주요 특징은 아래와같다

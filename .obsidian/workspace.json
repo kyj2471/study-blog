@@ -11,8 +11,12 @@
             "id": "c6d0632dfbaa6299",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CS/네트워크/What is Internet?.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CS/네트워크/What is Internet?.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "CS/네트워크/What is Internet?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "CS/네트워크/What is Internet?.md"
+              }
             }
           }
         ]
@@ -140,6 +148,14 @@
   },
   "active": "c6d0632dfbaa6299",
   "lastOpenFiles": [
+    "CS/네트워크/Transport Layer.md",
+    "CS/네트워크/Network Layer-Routing in internet.md",
+    "CS/네트워크/Network Layer-Routing Algorithms.md",
+    "CS/네트워크/Network Layer-Broadcast and multicast routing.md",
+    "CS/네트워크/Network Layer- Router, IP Protocol.md",
+    "CS/네트워크/Link Layer.md",
+    "CS/네트워크/Application Layer.md",
+    "javascript/총정리.md",
     "work experience/Code splitting.md",
     "Jest/Jest.md",
     "work experience/SEO 개선 (성능 개선).md",
@@ -153,12 +169,6 @@
     "Jest",
     "웹을 지탱하는 기술/URI.md",
     "웹을 지탱하는 기술/웹 개론 (웹 역사, REST-웹 아키텍쳐 스타일).md",
-    "CS/네트워크/Link Layer.md",
-    "CS/네트워크/Network Layer-Broadcast and multicast routing.md",
-    "CS/네트워크/Network Layer-Routing in internet.md",
-    "CS/네트워크/Network Layer-Routing Algorithms.md",
-    "CS/네트워크/Network Layer- Router, IP Protocol.md",
-    "CS/네트워크/Application Layer.md",
     "javascript/브라우저 렌더링 방식.md",
     "웹을 지탱하는 기술",
     "javascript/일급 객체.md",
@@ -168,9 +178,7 @@
     "javascript/클로저.md",
     "javascript/콜백함수.md",
     "javascript/This.md",
-    "javascript/총정리.md",
     "javascript/실행 컨텍스트.md",
-    "javascript/데이터 타입.md",
     "study",
     "CS/네트워크",
     "CS",
