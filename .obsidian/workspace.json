@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/네트워크/What is Internet?.md",
+                "file": "work experience/airbridge.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/네트워크/What is Internet?.md",
+                "file": "work experience/airbridge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/네트워크/What is Internet?.md",
+                "file": "work experience/airbridge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/네트워크/What is Internet?.md"
+                "file": "work experience/airbridge.md"
               }
             }
           }
@@ -148,6 +148,8 @@
   },
   "active": "c6d0632dfbaa6299",
   "lastOpenFiles": [
+    "CS/네트워크/What is Internet?.md",
+    "work experience/airbridge.md",
     "CS/네트워크/Transport Layer.md",
     "CS/네트워크/Network Layer-Routing in internet.md",
     "CS/네트워크/Network Layer-Routing Algorithms.md",
@@ -177,8 +179,6 @@
     "javascript/프로토타입.md",
     "javascript/클로저.md",
     "javascript/콜백함수.md",
-    "javascript/This.md",
-    "javascript/실행 컨텍스트.md",
     "study",
     "CS/네트워크",
     "CS",
