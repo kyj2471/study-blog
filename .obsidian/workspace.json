@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "etc/Babel (바벨).md",
+                "file": "work experience/Test.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "etc/Babel (바벨).md",
+                "file": "work experience/Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "etc/Babel (바벨).md",
+                "file": "work experience/Test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "etc/Babel (바벨).md"
+                "file": "work experience/Test.md"
               }
             }
           }
@@ -161,6 +161,8 @@
   },
   "active": "dd2ce1139d5cdd8e",
   "lastOpenFiles": [
+    "etc/Babel (바벨).md",
+    "work experience/Test.md",
     "work experience/airbridge.md",
     "study/react-query 학습 note.md",
     "CS/네트워크/What is Internet?.md",
@@ -175,7 +177,6 @@
     "work experience/Code splitting.md",
     "Jest/Jest.md",
     "work experience/SEO 개선 (성능 개선).md",
-    "etc/Babel (바벨).md",
     "etc/esLint, prettier.md",
     "study/React-Query 이전.md",
     "etc",
@@ -191,7 +192,6 @@
     "CS/네트워크/index.html",
     "javascript/클래스.md",
     "javascript/프로토타입.md",
-    "javascript/클로저.md",
     "study",
     "CS/네트워크",
     "CS",
