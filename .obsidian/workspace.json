@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/test.md",
+                "file": "work experience/Test.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "javascript/test.md",
+                "file": "work experience/Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "javascript/test.md",
+                "file": "work experience/Test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "javascript/test.md"
+                "file": "work experience/Test.md"
               }
             }
           }
@@ -161,8 +161,8 @@
   },
   "active": "dd2ce1139d5cdd8e",
   "lastOpenFiles": [
-    "work experience/Test.md",
     "javascript/test.md",
+    "work experience/Test.md",
     "etc/Babel (바벨).md",
     "work experience/airbridge.md",
     "study/react-query 학습 note.md",
