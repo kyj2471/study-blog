@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "work experience/Test.md",
+                "file": "backend_basic/RESTful과 REST API.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "work experience/Test.md",
+                "file": "backend_basic/RESTful과 REST API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "work experience/Test.md",
+                "file": "backend_basic/RESTful과 REST API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "work experience/Test.md"
+                "file": "backend_basic/RESTful과 REST API.md"
               }
             }
           }
@@ -161,8 +161,10 @@
   },
   "active": "dd2ce1139d5cdd8e",
   "lastOpenFiles": [
-    "javascript/test.md",
     "work experience/Test.md",
+    "backend_basic/RESTful과 REST API.md",
+    "backend_basic",
+    "javascript/test.md",
     "etc/Babel (바벨).md",
     "work experience/airbridge.md",
     "study/react-query 학습 note.md",
@@ -191,12 +193,10 @@
     "웹을 지탱하는 기술",
     "javascript/일급 객체.md",
     "CS/네트워크/index.html",
-    "javascript/클래스.md",
     "study",
     "CS/네트워크",
     "CS",
     "스크린샷 2024-03-28 오후 9.41.40.png",
-    "javascript/도서 정리/코어자바스크립트",
-    "javascript/도서 정리"
+    "javascript/도서 정리/코어자바스크립트"
   ]
 }
