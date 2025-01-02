@@ -1,10 +1,5 @@
 # RESTful과 REST API 기초
 
-## 1. 강의 목표
-이 강의에서는 RESTful과 REST API의 기본 개념을 간단히 설명합니다.
-
----
-
 ## 2. RESTful이란?
 
 - **REST** (Representational State Transfer): 웹 아키텍처 원리 중 하나로, 클라이언트와 서버가 데이터를 주고받는 방식에 대한 아키텍처 형식입니다.
