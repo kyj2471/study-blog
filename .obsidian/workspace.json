@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend_basic/메세지 큐의 역할.md",
+                "file": "backend_basic/관계형 데이터베이스(SQL) vs 비관계형 데이터베이스(NoSQL).md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "backend_basic/메세지 큐의 역할.md",
+                "file": "backend_basic/관계형 데이터베이스(SQL) vs 비관계형 데이터베이스(NoSQL).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "backend_basic/메세지 큐의 역할.md",
+                "file": "backend_basic/관계형 데이터베이스(SQL) vs 비관계형 데이터베이스(NoSQL).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "backend_basic/메세지 큐의 역할.md"
+                "file": "backend_basic/관계형 데이터베이스(SQL) vs 비관계형 데이터베이스(NoSQL).md"
               }
             }
           }
@@ -161,8 +161,10 @@
   },
   "active": "dd2ce1139d5cdd8e",
   "lastOpenFiles": [
-    "backend_basic/RESTful과 REST API.md",
+    "backend_basic/DB역할과 핵심 기능.md",
+    "backend_basic/관계형 데이터베이스(SQL) vs 비관계형 데이터베이스(NoSQL).md",
     "backend_basic/메세지 큐의 역할.md",
+    "backend_basic/RESTful과 REST API.md",
     "work experience/Test.md",
     "backend_basic",
     "javascript/test.md",
@@ -189,8 +191,6 @@
     "웹을 지탱하는 기술/HTTP (method, header, vs HTTPS).md",
     "Jest",
     "웹을 지탱하는 기술/URI.md",
-    "웹을 지탱하는 기술/웹 개론 (웹 역사, REST-웹 아키텍쳐 스타일).md",
-    "javascript/브라우저 렌더링 방식.md",
     "웹을 지탱하는 기술",
     "CS/네트워크/index.html",
     "study",
