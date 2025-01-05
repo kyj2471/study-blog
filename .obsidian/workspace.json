@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend_basic/관계형 데이터베이스(SQL) vs 비관계형 데이터베이스(NoSQL).md",
+                "file": "backend_basic/캐시의 역할, Redis 소개.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "backend_basic/관계형 데이터베이스(SQL) vs 비관계형 데이터베이스(NoSQL).md",
+                "file": "backend_basic/캐시의 역할, Redis 소개.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "backend_basic/관계형 데이터베이스(SQL) vs 비관계형 데이터베이스(NoSQL).md",
+                "file": "backend_basic/캐시의 역할, Redis 소개.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "backend_basic/관계형 데이터베이스(SQL) vs 비관계형 데이터베이스(NoSQL).md"
+                "file": "backend_basic/캐시의 역할, Redis 소개.md"
               }
             }
           }
@@ -161,8 +161,10 @@
   },
   "active": "dd2ce1139d5cdd8e",
   "lastOpenFiles": [
-    "backend_basic/DB역할과 핵심 기능.md",
+    "backend_basic/DB 트랜잭션.md",
+    "backend_basic/캐시의 역할, Redis 소개.md",
     "backend_basic/관계형 데이터베이스(SQL) vs 비관계형 데이터베이스(NoSQL).md",
+    "backend_basic/DB역할과 핵심 기능.md",
     "backend_basic/메세지 큐의 역할.md",
     "backend_basic/RESTful과 REST API.md",
     "work experience/Test.md",
@@ -188,9 +190,7 @@
     "etc",
     "work experience/트레져 데이터 유저 행동 패턴 분석.md",
     "work experience",
-    "웹을 지탱하는 기술/HTTP (method, header, vs HTTPS).md",
     "Jest",
-    "웹을 지탱하는 기술/URI.md",
     "웹을 지탱하는 기술",
     "CS/네트워크/index.html",
     "study",
