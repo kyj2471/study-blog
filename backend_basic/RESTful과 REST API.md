@@ -1,13 +1,12 @@
-# RESTful과 REST API 기초
 
-## 2. RESTful이란?
+## - RESTful이란?
 
 - **REST** (Representational State Transfer): 웹 아키텍처 원리 중 하나로, 클라이언트와 서버가 데이터를 주고받는 방식에 대한 아키텍처 형식입니다.
 - **RESTful**: REST 가이드를 갖춘 인터페이스를 RESTful하다고 표현합니다.
 
 ---
 
-## 3. REST의 기본 원칙
+## - REST의 기본 원칙
 
 1. **클라이언트-서버 구조**  
    - 클라이언트와 서버는 서로 독립적으로 개발될 수 있어야 합니다.  
@@ -40,14 +39,14 @@
 
 ---
 
-## 4. REST API란?
+## - REST API란?
 
 - **API** (Application Programming Interface): 애플리케이션 간 상호 작용을 정의하는 규칙입니다.
 - **REST API**: RESTful한 방식으로 자원에 접근하고 조작하는 API를 의미합니다.
 
 ---
 
-## 5. RESTful API의 장점
+## - RESTful API의 장점
 
 - **단순함**: HTTP 프로토콜을 그대로 사용하므로 학습 곡선이 낮습니다.
 - **확장성**: 클라이언트와 서버의 분리가 용이합니다.
@@ -55,7 +54,7 @@
 
 ---
 
-## 6. 간단한 REST API 예제
+## - 간단한 REST API 예제
 
 ### 사용자 정보 조회
 

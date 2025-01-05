@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend_basic/캐시의 역할, Redis 소개.md",
+                "file": "backend_basic/RESTful과 REST API.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "backend_basic/캐시의 역할, Redis 소개.md",
+                "file": "backend_basic/RESTful과 REST API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "backend_basic/캐시의 역할, Redis 소개.md",
+                "file": "backend_basic/RESTful과 REST API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "backend_basic/캐시의 역할, Redis 소개.md"
+                "file": "backend_basic/RESTful과 REST API.md"
               }
             }
           }
@@ -161,8 +161,9 @@
   },
   "active": "dd2ce1139d5cdd8e",
   "lastOpenFiles": [
-    "backend_basic/DB 트랜잭션.md",
+    "backend_basic/무제 파일.md",
     "backend_basic/캐시의 역할, Redis 소개.md",
+    "backend_basic/DB 트랜잭션.md",
     "backend_basic/관계형 데이터베이스(SQL) vs 비관계형 데이터베이스(NoSQL).md",
     "backend_basic/DB역할과 핵심 기능.md",
     "backend_basic/메세지 큐의 역할.md",
@@ -188,7 +189,6 @@
     "etc/esLint, prettier.md",
     "study/React-Query 이전.md",
     "etc",
-    "work experience/트레져 데이터 유저 행동 패턴 분석.md",
     "work experience",
     "Jest",
     "웹을 지탱하는 기술",
