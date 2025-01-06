@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend_basic/모노리스 vs 마이크로 서비스.md",
+                "file": "backend_basic/서버의 다양한 역할 (API, 배치, 스트리밍, 소켓).md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "backend_basic/모노리스 vs 마이크로 서비스.md",
+                "file": "backend_basic/서버의 다양한 역할 (API, 배치, 스트리밍, 소켓).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "backend_basic/모노리스 vs 마이크로 서비스.md",
+                "file": "backend_basic/서버의 다양한 역할 (API, 배치, 스트리밍, 소켓).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "backend_basic/모노리스 vs 마이크로 서비스.md"
+                "file": "backend_basic/서버의 다양한 역할 (API, 배치, 스트리밍, 소켓).md"
               }
             }
           }
@@ -161,8 +161,9 @@
   },
   "active": "dd2ce1139d5cdd8e",
   "lastOpenFiles": [
-    "backend_basic/API문서란, swagger 소개.md",
     "backend_basic/모노리스 vs 마이크로 서비스.md",
+    "backend_basic/서버의 다양한 역할 (API, 배치, 스트리밍, 소켓).md",
+    "backend_basic/API문서란, swagger 소개.md",
     "backend_basic/무제 파일 1.md",
     "backend_basic/RESTful과 REST API.md",
     "backend_basic/캐시의 역할, Redis 소개.md",
@@ -187,7 +188,6 @@
     "javascript/총정리.md",
     "work experience/Code splitting.md",
     "Jest/Jest.md",
-    "work experience/SEO 개선 (성능 개선).md",
     "etc",
     "work experience",
     "Jest",
