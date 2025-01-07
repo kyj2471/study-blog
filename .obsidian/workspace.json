@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend_basic/Session VS JWT.md",
+                "file": "backend_basic/GraphQL 프로토콜.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "backend_basic/Session VS JWT.md",
+                "file": "backend_basic/GraphQL 프로토콜.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "backend_basic/Session VS JWT.md",
+                "file": "backend_basic/GraphQL 프로토콜.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "backend_basic/Session VS JWT.md"
+                "file": "backend_basic/GraphQL 프로토콜.md"
               }
             }
           }
@@ -161,8 +161,9 @@
   },
   "active": "dd2ce1139d5cdd8e",
   "lastOpenFiles": [
-    "backend_basic/터미널 명령어.md",
     "backend_basic/Session VS JWT.md",
+    "backend_basic/GraphQL 프로토콜.md",
+    "backend_basic/터미널 명령어.md",
     "backend_basic/레이어드 아키텍쳐.md",
     "backend_basic/테스트 코드.md",
     "backend_basic/도커(Docker).md",
@@ -187,7 +188,6 @@
     "CS/네트워크/Network Layer-Routing in internet.md",
     "CS/네트워크/Network Layer-Routing Algorithms.md",
     "CS/네트워크/Network Layer-Broadcast and multicast routing.md",
-    "CS/네트워크/Network Layer- Router, IP Protocol.md",
     "etc",
     "work experience",
     "Jest",
