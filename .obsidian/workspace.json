@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend_basic/배포 환경 관리.md",
+                "file": "backend_basic/Nest.js.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "배포 환경 관리"
+              "title": "Nest.js"
             }
           }
         ],
@@ -193,8 +193,9 @@
   },
   "active": "0bf8f4e03e9a31f1",
   "lastOpenFiles": [
-    "backend_basic/무중단 배포.md",
     "backend_basic/배포 환경 관리.md",
+    "backend_basic/Nest.js.md",
+    "backend_basic/무중단 배포.md",
     "backend_basic/CORS.md",
     "backend_basic/무제 폴더",
     "backend_basic/Session VS JWT.md",
@@ -220,7 +221,6 @@
     "work experience/airbridge.md",
     "study/react-query 학습 note.md",
     "CS/네트워크/What is Internet?.md",
-    "CS/네트워크/Transport Layer.md",
     "etc",
     "work experience",
     "Jest",
