@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend_basic/Ioc (Inversion of Control) 및 DI 설명.md",
+                "file": "backend_basic/nest 시작.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ioc (Inversion of Control) 및 DI 설명"
+              "title": "nest 시작"
             }
           }
         ],
@@ -193,8 +193,9 @@
   },
   "active": "0bf8f4e03e9a31f1",
   "lastOpenFiles": [
-    "backend_basic/Nest.js.md",
     "backend_basic/Ioc (Inversion of Control) 및 DI 설명.md",
+    "backend_basic/nest 시작.md",
+    "backend_basic/Nest.js.md",
     "backend_basic/배포 환경 관리.md",
     "backend_basic/무중단 배포.md",
     "backend_basic/CORS.md",
@@ -220,7 +221,6 @@
     "javascript/test.md",
     "etc/Babel (바벨).md",
     "work experience/airbridge.md",
-    "study/react-query 학습 note.md",
     "etc",
     "work experience",
     "Jest",
